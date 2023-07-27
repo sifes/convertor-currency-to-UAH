@@ -1,0 +1,95 @@
+@use 'scss-reset/reset';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+body {
+  background: rgb(101, 101, 101);
+  font-family: 'Inter', system-ui !important;
+
+  background: linear-gradient(90deg, rgb(25, 20, 20) 0%, rgba(18, 18, 18, 1) 80%);
+}
+
+.App {
+  width: 500px;
+  margin: 150px auto;
+  background: rgb(59, 0, 112);
+  background: linear-gradient(90deg, rgba(59, 0, 112, 1) 0%, rgba(140, 76, 179, 1) 80%);
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+}
+
+.convertor {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 10px 20px;
+    letter-spacing: 1.3px;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 100%;
+  }
+
+}
+
+
+.currencies {
+
+  ul {
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding-left: 0px;
+    overflow: hidden;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 2px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    &:active {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    &.active {
+      background-color: #16b67f;
+      color: #fff;
+    }
+  }
+
+}
+
+.currencyTo {
+  margin-top: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  p {
+    font-weight: 500;
+  }
+
+}
