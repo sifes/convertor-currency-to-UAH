@@ -2,19 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 body {
-  background: rgb(101, 101, 101);
+  background: rgb(125, 125, 125);
   font-family: 'Inter', system-ui !important;
-
   background: linear-gradient(90deg, rgb(25, 20, 20) 0%, rgba(18, 18, 18, 1) 80%);
 }
 
 .App {
   width: 500px;
   margin: 150px auto;
-  background: rgb(59, 0, 112);
   background: linear-gradient(90deg, rgba(59, 0, 112, 1) 0%, rgba(140, 76, 179, 1) 80%);
   padding: 30px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 20px rgba(255, 255, 255, .15);
   border-radius: 15px;
 }
 
@@ -41,11 +39,12 @@ body {
     border-radius: 15px;
     width: 100%;
   }
-
 }
 
-
 .currencies {
+  span {
+    color: #fff;
+  }
 
   ul {
     display: flex;
@@ -76,14 +75,13 @@ body {
       color: #fff;
     }
   }
-
 }
 
 .currencyTo {
   margin-top: 25px;
   font-size: 28px;
   font-weight: bold;
-  color: #000;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   gap: 12px;
